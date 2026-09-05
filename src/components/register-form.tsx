@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { PasswordInput } from '@/components/ui/password-input'
 
 export function RegisterForm() {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -45,11 +46,11 @@ export function RegisterForm() {
           </div>
           <div className="grid gap-2">
             <Label htmlFor="password">Password</Label>
-            <Input id="password" type="password" required />
+            <PasswordInput id="password" name="password" required />
           </div>
           <div className="grid gap-2">
             <Label htmlFor="confirm-password">Confirm Password</Label>
-            <Input id="confirm-password" type="password" required />
+            <PasswordInput id="confirm-password" name="confirmPassword" required />
           </div>
           <Button type="submit" className="w-full">
             Register
