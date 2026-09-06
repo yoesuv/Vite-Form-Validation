@@ -1,5 +1,8 @@
 # Form Validation Demo
 
+[![codecov](https://codecov.io/gh/yoesuv/Vite-Form-Validation/graph/badge.svg?token=AIG4IZ0ME5)](https://codecov.io/gh/yoesuv/Vite-Form-Validation)
+[![](https://github.com/yoesuv/Vite-Form-Validation/actions/workflows/github-actions.yml/badge.svg)](https://github.com/yoesuv/Vite-Form-Validation/actions)
+
 A simple Vite app with login and registration forms. It includes inline validation, password visibility controls, and responsive styling.
 
 This is a frontend demo only. It does not create accounts, verify credentials, or connect to a backend. Successful form submissions are logged to the browser console.
