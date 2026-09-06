@@ -3,7 +3,7 @@ import { z } from 'zod'
 // Matches common emoji/emoticon unicode blocks, flag sequences,
 // and variation selectors (e.g. ✨, 👍, 🇺🇸, ☺️)
 const EMOTICON_REGEX =
-  /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{1F1E6}-\u{1F1FF}\u{FE00}-\u{FE0F}]/u
+  /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{1F1E6}-\u{1F1FF}]|\p{Variation_Selector}/u
 
 export const loginSchema = z.object({
   email: z
