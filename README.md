@@ -1,75 +1,47 @@
-# React + TypeScript + Vite
+# Form Validation Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Vite app with login and registration forms. It includes inline validation, password visibility controls, and responsive styling.
 
-Currently, two official plugins are available:
+This is a frontend demo only. It does not create accounts, verify credentials, or connect to a backend. Successful form submissions are logged to the browser console.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Validation
 
-## React Compiler
+- Email is required and must be valid.
+- Passwords must be at least 8 characters.
+- Names must be 2 to 250 characters and cannot contain emoticons.
+- Registration passwords must match.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run Locally
 
-## Expanding the ESLint configuration
+Requires Node.js 20 or newer.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Open the local URL shown in the terminal, usually `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Commands
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Command                  | Description                  |
+| ------------------------ | ---------------------------- |
+| `npm run dev`            | Start the development server |
+| `npm run build`          | Create a production build    |
+| `npm run preview`        | Preview the production build |
+| `npm run lint`           | Check the code with ESLint   |
+| `npm test`               | Run the tests                |
+| `npm run test:watch`     | Run tests in watch mode      |
+| `npm test -- --coverage` | Run tests with coverage      |
 
-```
+## Routes
+
+- `/login` - Login form
+- `/register` - Registration form
+- `/` - Redirects to `/login`
+
+## Built With
+
+React, TypeScript, Vite, React Router, Zod, Tailwind CSS, Vitest, and Testing Library.
+
+Validation schemas are in `src/lib/validation.ts`. Tests are in `test/`.
