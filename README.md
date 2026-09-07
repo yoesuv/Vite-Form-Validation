@@ -14,6 +14,12 @@ This is a frontend demo only. It does not create accounts, verify credentials, o
 - Names must be 2 to 250 characters and cannot contain emoticons.
 - Registration passwords must match.
 
+## Screenshot
+
+| ![](https://i.ibb.co.com/XkLjqmzv/Screenshot-2026-09-07-at-08-43-35.png) | ![](https://i.ibb.co.com/9HhgLnwS/Screenshot-2026-09-07-at-08-43-54.png) |
+| :----------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+| ![](https://i.ibb.co.com/8nk6ZG6W/Screenshot-2026-09-07-at-08-44-21.png) | ![](https://i.ibb.co.com/x86ThZwD/Screenshot-2026-09-07-at-08-44-46.png) |
+
 ## Run Locally
 
 Requires Node.js 20 or newer.
