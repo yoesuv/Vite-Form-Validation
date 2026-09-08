@@ -1,5 +1,8 @@
 # Form Validation Demo
 
+[![codecov](https://codecov.io/gh/yoesuv/Vite-Form-Validation/graph/badge.svg?token=AIG4IZ0ME5)](https://codecov.io/gh/yoesuv/Vite-Form-Validation)
+[![vite form validation](https://github.com/yoesuv/Vite-Form-Validation/actions/workflows/ci.yml/badge.svg)](https://github.com/yoesuv/Vite-Form-Validation/actions)
+
 A simple Vite app with login and registration forms. It includes inline validation, password visibility controls, and responsive styling.
 
 This is a frontend demo only. It does not create accounts, verify credentials, or connect to a backend. Successful form submissions are logged to the browser console.
@@ -10,6 +13,12 @@ This is a frontend demo only. It does not create accounts, verify credentials, o
 - Passwords must be at least 8 characters.
 - Names must be 2 to 250 characters and cannot contain emoticons.
 - Registration passwords must match.
+
+## Screenshot
+
+| ![](https://i.ibb.co.com/XkLjqmzv/Screenshot-2026-09-07-at-08-43-35.png) | ![](https://i.ibb.co.com/9HhgLnwS/Screenshot-2026-09-07-at-08-43-54.png) |
+| :----------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+| ![](https://i.ibb.co.com/8nk6ZG6W/Screenshot-2026-09-07-at-08-44-21.png) | ![](https://i.ibb.co.com/x86ThZwD/Screenshot-2026-09-07-at-08-44-46.png) |
 
 ## Run Locally
 
